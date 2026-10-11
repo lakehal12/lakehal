@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#285847">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Arruapan caisses">
+<title>Arruapan caisses</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="codeScreen" class="hide">
+  <h1 style="margin-bottom:8px">Entrez votre code d’accès</h1>
+  <p class="sum">Utilisez le même code sur tous vos téléphones.</p>
+  <input id="code" autocapitalize="none" autocomplete="off" placeholder="Code d’accès" style="text-align:center;margin:16px 0 4px">
+  <p class="err" id="cerr"></p>
+  <button id="connect" style="width:100%">Se connecter</button>
+</div>
+<main id="main">
+  <header><h1>Arruapan caisses</h1><button id="add">+ Ajouter un magasin</button></header>
+  <div class="total"><small>CAISSES ENCORE DEHORS</small><b id="total">0</b><span id="across"></span></div>
+  <button id="status" type="button">Démarrage…</button>
+  <input id="q" type="search" placeholder="Rechercher un supermarché" autocomplete="off">
+  <p class="sum" id="sum"></p>
+  <div id="list"></div>
+</main>
+<div class="sheet hide" id="sheet"><div id="sbody"></div></div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
